@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,17 @@
 		262E5B2721AFE57D009363E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 262E5B2621AFE57D009363E7 /* Assets.xcassets */; };
 		262E5B2A21AFE57D009363E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262E5B2821AFE57D009363E7 /* LaunchScreen.storyboard */; };
 		26886ABE2236AB6500781D3E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26886ABD2236AB6500781D3E /* Media.xcassets */; };
+		3B0E80842385FAA900ACB085 /* TotalMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E80832385FAA900ACB085 /* TotalMenuViewController.swift */; };
+		3B0E80872385FF8200ACB085 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E80862385FF8200ACB085 /* HomeTableViewController.swift */; };
 		3B0F72972385759800BBEA8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F72962385759800BBEA8C /* AppDelegate.swift */; };
-		810155F723854B8B00E0B7CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810155F623854B8B00E0B7CC /* ViewController.swift */; };
+		3B0F729E2385958100BBEA8C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F72992385958100BBEA8C /* Alert.swift */; };
+		3B0F729F2385958100BBEA8C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F729A2385958100BBEA8C /* CardView.swift */; };
+		3B0F72A02385958100BBEA8C /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F729B2385958100BBEA8C /* DesignableUITextField.swift */; };
+		3B0F72A12385958100BBEA8C /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F729C2385958100BBEA8C /* Maps.swift */; };
+		3B122EDE23867A1E0056E7BF /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B122EDD23867A1E0056E7BF /* OfferViewController.swift */; };
+		3B122EE6238681230056E7BF /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B122EE5238681230056E7BF /* ForgetPasswordViewController.swift */; };
+		3B122EE8238681710056E7BF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B122EE7238681710056E7BF /* RegisterViewController.swift */; };
+		810155F723854B8B00E0B7CC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810155F623854B8B00E0B7CC /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,15 +36,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		262E5B1921AFE578009363E7 /* GoAhead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = GoAhead.app; path = "/Users/Mustafa/Desktop/GoAhead/build/Debug-iphoneos/GoAhead.app"; sourceTree = "<absolute>"; };
 		262E5B2121AFE578009363E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		262E5B2621AFE57D009363E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		262E5B2921AFE57D009363E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		262E5B2B21AFE57D009363E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		267AFB3C2250FA6E00F17350 /* GoAheadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GoAheadTests.xctest; path = "/Users/Mustafa/Desktop/GoAhead/build/Debug-iphoneos/GoAheadTests.xctest"; sourceTree = "<absolute>"; };
 		26886ABD2236AB6500781D3E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		3B0E80802385F3A700ACB085 /* GoAhead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoAhead.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0E80812385F3A700ACB085 /* GoAheadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoAheadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0E80832385FAA900ACB085 /* TotalMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalMenuViewController.swift; sourceTree = "<group>"; };
+		3B0E80862385FF8200ACB085 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		3B0F72962385759800BBEA8C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		810155F623854B8B00E0B7CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B0F72992385958100BBEA8C /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		3B0F729A2385958100BBEA8C /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3B0F729B2385958100BBEA8C /* DesignableUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
+		3B0F729C2385958100BBEA8C /* Maps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
+		3B122EDD23867A1E0056E7BF /* OfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
+		3B122EE5238681230056E7BF /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		3B122EE7238681710056E7BF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		810155F623854B8B00E0B7CC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BCC89F68BD9678F27459564E /* Pods-GoAhead.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoAhead.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoAhead/Pods-GoAhead.debug.xcconfig"; sourceTree = "<group>"; };
 		D2AA2B32F6F11C44F110F0C4 /* Pods_GoAhead.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoAhead.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BC19824E08412DA1DA40A9 /* Pods-GoAhead.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoAhead.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoAhead/Pods-GoAhead.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,19 +84,24 @@
 				262E5B1B21AFE578009363E7 /* GoAhead */,
 				F6C5AC9ED59CACEAB0EE1471 /* Pods */,
 				33408C0CE60143AE84AA40CC /* Frameworks */,
+				3B0E80802385F3A700ACB085 /* GoAhead.app */,
+				3B0E80812385F3A700ACB085 /* GoAheadTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
 		262E5B1B21AFE578009363E7 /* GoAhead */ = {
 			isa = PBXGroup;
 			children = (
+				3B0F72982385958100BBEA8C /* Utitlites */,
+				3B0E80822385FA6A00ACB085 /* Menu */,
+				3B122EE92386866C0056E7BF /* Senarios */,
 				3B0F72962385759800BBEA8C /* AppDelegate.swift */,
 				262E5B2021AFE578009363E7 /* Main.storyboard */,
-				810155F623854B8B00E0B7CC /* ViewController.swift */,
 				262E5B2621AFE57D009363E7 /* Assets.xcassets */,
 				26886ABD2236AB6500781D3E /* Media.xcassets */,
 				262E5B2821AFE57D009363E7 /* LaunchScreen.storyboard */,
 				262E5B2B21AFE57D009363E7 /* Info.plist */,
+				3B122EDD23867A1E0056E7BF /* OfferViewController.swift */,
 			);
 			path = GoAhead;
 			sourceTree = "<group>";
@@ -89,6 +112,76 @@
 				D2AA2B32F6F11C44F110F0C4 /* Pods_GoAhead.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B0E80822385FA6A00ACB085 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				3B0E80832385FAA900ACB085 /* TotalMenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		3B0E80852385FF1A00ACB085 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3B0E80862385FF8200ACB085 /* HomeTableViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3B0F72982385958100BBEA8C /* Utitlites */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F72992385958100BBEA8C /* Alert.swift */,
+				3B0F729A2385958100BBEA8C /* CardView.swift */,
+				3B0F729B2385958100BBEA8C /* DesignableUITextField.swift */,
+				3B0F729C2385958100BBEA8C /* Maps.swift */,
+			);
+			path = Utitlites;
+			sourceTree = "<group>";
+		};
+		3B122EDF238680AD0056E7BF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3B122EE3238680E70056E7BF /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3B122EE2238680D90056E7BF /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				3B122EE4238680F90056E7BF /* Controller */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		3B122EE3238680E70056E7BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				810155F623854B8B00E0B7CC /* LoginViewController.swift */,
+				3B122EE5238681230056E7BF /* ForgetPasswordViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B122EE4238680F90056E7BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B122EE7238681710056E7BF /* RegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B122EE92386866C0056E7BF /* Senarios */ = {
+			isa = PBXGroup;
+			children = (
+				3B0E80852385FF1A00ACB085 /* Home */,
+				3B122EDF238680AD0056E7BF /* Login */,
+				3B122EE2238680D90056E7BF /* Register */,
+			);
+			path = Senarios;
 			sourceTree = "<group>";
 		};
 		F6C5AC9ED59CACEAB0EE1471 /* Pods */ = {
@@ -111,6 +204,7 @@
 				262E5B1521AFE578009363E7 /* Sources */,
 				262E5B1621AFE578009363E7 /* Frameworks */,
 				262E5B1721AFE578009363E7 /* Resources */,
+				F947FAEC4106DD78BF77155C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -118,7 +212,7 @@
 			);
 			name = GoAhead;
 			productName = GoAhead;
-			productReference = 262E5B1921AFE578009363E7 /* GoAhead.app */;
+			productReference = 3B0E80802385F3A700ACB085 /* GoAhead.app */;
 			productType = "com.apple.product-type.application";
 		};
 		267AFB3B2250FA6E00F17350 /* GoAheadTests */ = {
@@ -136,7 +230,7 @@
 			);
 			name = GoAheadTests;
 			productName = GoAheadTests;
-			productReference = 267AFB3C2250FA6E00F17350 /* GoAheadTests.xctest */;
+			productReference = 3B0E80812385F3A700ACB085 /* GoAheadTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -221,6 +315,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F947FAEC4106DD78BF77155C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoAhead/Pods-GoAhead-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoAhead/Pods-GoAhead-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoAhead/Pods-GoAhead-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -228,8 +339,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B122EE6238681230056E7BF /* ForgetPasswordViewController.swift in Sources */,
+				3B0E80872385FF8200ACB085 /* HomeTableViewController.swift in Sources */,
+				3B122EDE23867A1E0056E7BF /* OfferViewController.swift in Sources */,
+				3B122EE8238681710056E7BF /* RegisterViewController.swift in Sources */,
+				3B0E80842385FAA900ACB085 /* TotalMenuViewController.swift in Sources */,
+				3B0F72A02385958100BBEA8C /* DesignableUITextField.swift in Sources */,
+				3B0F729E2385958100BBEA8C /* Alert.swift in Sources */,
+				3B0F72A12385958100BBEA8C /* Maps.swift in Sources */,
 				3B0F72972385759800BBEA8C /* AppDelegate.swift in Sources */,
-				810155F723854B8B00E0B7CC /* ViewController.swift in Sources */,
+				3B0F729F2385958100BBEA8C /* CardView.swift in Sources */,
+				810155F723854B8B00E0B7CC /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

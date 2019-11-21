@@ -6,5 +6,6 @@ target 'GoAhead' do
   use_frameworks!
 
   # Pods for GoAhead
+  pod 'SideMenu'
 
 end
