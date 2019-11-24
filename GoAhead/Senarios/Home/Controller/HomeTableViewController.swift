@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SDWebImage
 @available(iOS 13.0, *)
 class HomeTableViewController: UITableViewController {
     
