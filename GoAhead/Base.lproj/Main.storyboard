@@ -1301,10 +1301,10 @@
             </objects>
             <point key="canvasLocation" x="7253.6231884057979" y="1664.7321428571429"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar-->
         <scene sceneID="xC4-dm-LWa">
             <objects>
-                <tabBarController id="mkc-SQ-aTe" sceneMemberID="viewController">
+                <tabBarController id="mkc-SQ-aTe" customClass="TabBar" customModule="GoAhead" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="n86-5W-4S2"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rc4-hD-euA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
