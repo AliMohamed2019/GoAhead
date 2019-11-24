@@ -527,6 +527,9 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="196" height="67"/>
+                                        <connections>
+                                            <outlet property="menuItemName" destination="wci-Ij-pLj" id="14z-UE-6Pb"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -630,7 +633,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNU-zZ-rMv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5198.5507246376819" y="2628.3482142857142"/>
+            <point key="canvasLocation" x="5201" y="2628"/>
         </scene>
         <!--Offer View Controller-->
         <scene sceneID="oX2-WC-35D">
