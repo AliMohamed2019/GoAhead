@@ -10,4 +10,19 @@ import UIKit
 
 class TotalItemCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var offersImage: UIImageView!
+       @IBOutlet weak var offersName: UILabel!
+       @IBOutlet weak var offersFav: UIImageView!
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       @IBAction func offerFavBtnBressed(_ sender: UIButton) {
+       }
+    
 }

@@ -579,6 +579,9 @@
                                                                 <constraint firstAttribute="width" constant="30" id="Xer-Dh-Fe0"/>
                                                                 <constraint firstAttribute="height" constant="30" id="wmY-Cr-Ydi"/>
                                                             </constraints>
+                                                            <connections>
+                                                                <action selector="offerFavBtnBressed:" destination="rQK-WQ-K0I" eventType="touchUpInside" id="Jo2-ci-aGA"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -605,6 +608,11 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="150"/>
+                                        <connections>
+                                            <outlet property="offersFav" destination="Crp-UY-9L7" id="gPg-Ff-FIO"/>
+                                            <outlet property="offersImage" destination="Sgz-Id-uU0" id="7Gr-Xm-iOQ"/>
+                                            <outlet property="offersName" destination="EQt-px-cAN" id="Nhi-uh-uwt"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -633,7 +641,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNU-zZ-rMv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5201" y="2628"/>
+            <point key="canvasLocation" x="5200" y="2627.6785714285711"/>
         </scene>
         <!--Offer View Controller-->
         <scene sceneID="oX2-WC-35D">
