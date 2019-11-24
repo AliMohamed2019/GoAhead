@@ -103,6 +103,7 @@
                     <connections>
                         <outlet property="passwordTf" destination="wDc-Us-OtJ" id="gDm-2P-LfH"/>
                         <outlet property="userNameTf" destination="q0P-jx-zbz" id="Lld-yS-E1j"/>
+                        <segue destination="mkc-SQ-aTe" kind="show" identifier="LogIn" id="gdw-KC-acV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U52-Uc-ktW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -425,7 +426,7 @@
             <objects>
                 <tableViewController id="qkZ-3Y-Ju2" customClass="HomeTableViewController" customModule="GoAhead" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="X9O-Gc-87v">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -490,11 +491,11 @@
             <objects>
                 <viewController storyboardIdentifier="TotalItemsViewController" id="AHe-Zp-NDQ" customClass="TotalItemsViewController" customModule="GoAhead" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dgb-8o-QEb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rxP-pj-18y">
-                                <rect key="frame" x="0.0" y="88" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="60"/>
                                 <color key="backgroundColor" name="Background"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="x77-OB-fFO"/>
@@ -541,7 +542,7 @@
                                 </connections>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SZ8-SJ-XHn">
-                                <rect key="frame" x="0.0" y="148" width="414" height="665"/>
+                                <rect key="frame" x="0.0" y="116" width="414" height="643"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ahe-Fh-xYG">
                                     <size key="itemSize" width="414" height="150"/>
@@ -654,14 +655,14 @@
             <objects>
                 <viewController id="gM1-Y8-cnt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o6f-ok-MZt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRJ-qh-pcq">
-                                <rect key="frame" x="10" y="88" width="394" height="263"/>
+                                <rect key="frame" x="10" y="56" width="394" height="241"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kze-CY-P83">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="263"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="241"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -673,14 +674,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4M-zw-BIt">
-                                <rect key="frame" x="30" y="371" width="354" height="1"/>
+                                <rect key="frame" x="30" y="317" width="354" height="1"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="CRT-Ge-h2B"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8b-Hj-Fae">
-                                <rect key="frame" x="20" y="382" width="374" height="100"/>
+                                <rect key="frame" x="20" y="328" width="374" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEU-0e-TZ0">
                                         <rect key="frame" x="50" y="39.5" width="42" height="21"/>
@@ -733,14 +734,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMk-oi-ktO">
-                                <rect key="frame" x="30" y="492" width="354" height="1"/>
+                                <rect key="frame" x="30" y="438" width="354" height="1"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="lMm-KJ-aMd"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1lT-gA-skq">
-                                <rect key="frame" x="0.0" y="513" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="459" width="414" height="300"/>
                                 <color key="backgroundColor" red="0.21440887450000001" green="0.1810300946" blue="0.41111928219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="TT1-f6-2eN"/>
@@ -814,11 +815,11 @@
             <objects>
                 <viewController storyboardIdentifier="OfferViewController" id="hHu-9q-BcN" customClass="OfferViewController" customModule="GoAhead" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Epq-Sq-8hh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZlF-38-Oph">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K0x-Y1-und">
                                     <size key="itemSize" width="412" height="160"/>
@@ -930,11 +931,11 @@
             <objects>
                 <viewController storyboardIdentifier="MostAddedViewController" id="suO-Sj-flR" customClass="MostAddedViewController" customModule="GoAhead" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x6Z-He-RNp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JgX-bX-Cu2">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Yh8-Iq-Udk">
                                     <size key="itemSize" width="414" height="150"/>
@@ -1046,11 +1047,11 @@
             <objects>
                 <viewController storyboardIdentifier="MyWishListViewController" id="e7Y-VQ-0rb" customClass="MyWishListViewController" customModule="GoAhead" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cwg-b3-HBx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="H7C-4E-EcL">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1sk-n1-r9s">
                                     <size key="itemSize" width="414" height="118"/>
@@ -1162,7 +1163,7 @@
             <objects>
                 <viewController storyboardIdentifier="GoMallViewController" id="efD-w2-Rk6" customClass="GoMallViewController" customModule="GoAhead" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rqm-xt-L4H">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="egY-mF-s8G">
@@ -1184,13 +1185,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewb-Ed-o2k">
-                                                    <rect key="frame" x="0.0" y="8" width="198" height="142"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="198" height="150"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N7B-gX-233">
-                                                            <rect key="frame" x="8" y="-7" width="180" height="113"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="198" height="150"/>
                                                         </imageView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaS-eF-ul8">
-                                                            <rect key="frame" x="8" y="55" width="180" height="30"/>
+                                                            <rect key="frame" x="0.0" y="100" width="198" height="30"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.30136986301369861" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" title="Button"/>
                                                         </button>
@@ -1261,10 +1262,10 @@
             </objects>
             <point key="canvasLocation" x="7253.6231884057979" y="1664.7321428571429"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar-->
         <scene sceneID="xC4-dm-LWa">
             <objects>
-                <tabBarController id="mkc-SQ-aTe" sceneMemberID="viewController">
+                <tabBarController id="mkc-SQ-aTe" customClass="TabBar" customModule="GoAhead" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="n86-5W-4S2"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rc4-hD-euA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -1366,7 +1367,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="Rgp-YY-LIY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b1y-tp-qtn">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="Background"/>
                     </navigationBar>
@@ -1388,7 +1389,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="97M-3J-3ts">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="Background"/>
                     </navigationBar>
@@ -1408,7 +1409,7 @@
                     <tabBarItem key="tabBarItem" title="Offers" image="offers" id="7fv-iY-VCF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="inU-a9-suA">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="Background"/>
                     </navigationBar>
@@ -1430,7 +1431,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ujr-kf-AXT">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="Background"/>
                     </navigationBar>
@@ -1450,7 +1451,7 @@
                     <tabBarItem key="tabBarItem" title="Go Mall" image="mall" id="mkQ-o3-V6t"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TPn-HM-8d9">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="Background"/>
                     </navigationBar>

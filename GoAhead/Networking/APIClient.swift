@@ -32,8 +32,8 @@ class APIClient {
     //---------------------------------------------------
     
     static func getAllCategories(completion:@escaping
-        (Result<String,AFError>)->Void){
-        performRequestSimple(route: APIRouter.getAllCategories , completion: completion)
+        (Result<GetCategories,AFError>)->Void){
+        performRequest(route: APIRouter.getAllCategories , completion: completion)
     }
     
     

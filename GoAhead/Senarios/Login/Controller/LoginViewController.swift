@@ -34,6 +34,7 @@ class LoginViewController: UIViewController ,NVActivityIndicatorViewable{
                         self?.stopAnimating()
                         print(response)
                         if response.status == 1 {
+                            self?.performSegue(withIdentifier: "LogIn", sender: self)
                             print("loged In")
                         }
                     case .failure(let error):
@@ -59,6 +60,13 @@ class LoginViewController: UIViewController ,NVActivityIndicatorViewable{
     @IBAction func registerBtnPressed(_ sender: UIButton) {
         let registerVc = storyboard?.instantiateViewController(identifier: "RegisterViewController")
                    present(registerVc!, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "LogIn" {
+            let vc = segue.destination as? TabBar
+            vc?.modalPresentationStyle = .fullScreen
+        }
     }
     
 }
