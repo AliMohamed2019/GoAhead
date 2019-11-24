@@ -7,10 +7,9 @@
 //
 
 import UIKit
-
-
+import NVActivityIndicatorView
 @available(iOS 13.0, *)
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController ,NVActivityIndicatorViewable{
 
     @IBOutlet weak var userNameTf: UITextField!
     @IBOutlet weak var passwordTf: UITextField!
@@ -26,6 +25,35 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signInbtnPressed(_ sender: UIButton) {
+        if  userNameTf.text != "" , passwordTf.text != "" {
+            self.startAnimating()
+            DispatchQueue.main.async { [weak self] in
+                APIClient.login(mail: (self?.userNameTf.text)!, password: (self?.passwordTf.text)!) { (Result) in
+                    switch Result {
+                    case .success(let response):
+                        self?.stopAnimating()
+                        print(response)
+                        if response.status == 1 {
+                            print("loged In")
+                        }
+                    case .failure(let error):
+                        self?.stopAnimating()
+                        print(error.localizedDescription)
+                        APIClient.loginError(mail: (self?.userNameTf.text)! , password: (self?.passwordTf.text)!) { (result) in
+                            switch result {
+                            case .success(let response):
+                                Alert.show("Failed", massege: response.message, context: self!)
+                                print(response)
+                            case .failure(let error):
+                                print(error.localizedDescription)
+                            }
+                        }
+                    }
+                }
+            }
+        } else {
+            Alert.show("ERROR", massege: "enter email and password", context: self)
+        }
     }
     
     @IBAction func registerBtnPressed(_ sender: UIButton) {
