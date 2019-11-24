@@ -1,5 +1,5 @@
 //
-//  OfferViewController.swift
+//  TotalItemsViewController.swift
 //  GoAhead
 //
 //  Created by Mustafa on 11/21/19.
@@ -8,8 +8,7 @@
 
 import UIKit
 
-@available(iOS 13.0, *)
-class OfferViewController: UIViewController {
+class TotalItemsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +27,4 @@ class OfferViewController: UIViewController {
     }
     */
 
-    @IBAction func itemPressed(_ sender: UIBarButtonItem) {
-        let sMenu = storyboard?.instantiateViewController(identifier: "SideMenuNavigationController")
-        sMenu?.modalPresentationStyle = .fullScreen
-        present(sMenu!, animated: true, completion: nil)
-        
-    }
 }

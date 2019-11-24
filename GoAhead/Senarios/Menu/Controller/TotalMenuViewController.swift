@@ -29,9 +29,9 @@ extension TotalMenuViewController : UITableViewDataSource , UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let  cell = tableView.dequeueReusableCell(withIdentifier: "menuBtn", for: indexPath)
+        let  cell = tableView.dequeueReusableCell(withIdentifier: "menuBtnTableViewCell", for: indexPath) as! menuBtnTableViewCell
              
-        cell.textLabel?.text = dataMenu[indexPath.row]
+        cell.categoryLbl.text = dataMenu[indexPath.row]
 
              
              return cell
